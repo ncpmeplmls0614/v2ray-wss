@@ -10,7 +10,7 @@ fi
 timedatectl set-timezone Asia/Shanghai
 v2path=$(cat /dev/urandom | head -1 | md5sum | head -c 6)
 v2uuid=$(cat /proc/sys/kernel/random/uuid)
-ssport=$(shuf -i 2000-65000 -n 1)
+ssport=443
 
 getIP(){
     local serverIP=
