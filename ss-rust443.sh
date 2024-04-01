@@ -9,7 +9,7 @@ fi
 
 timedatectl set-timezone Asia/Shanghai
 sspasswd=$(cat /proc/sys/kernel/random/uuid)
-ssport=$(shuf -i 2000-65000 -n 1)
+ssport=443
 
 getIP(){
     local serverIP=
