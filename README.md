@@ -1,7 +1,7 @@
 
-搭建 Shadowsocks-libev， V2ray+ Nginx + WebSocket 和 Reality 代理脚本，支持 Debian、Ubuntu、Centos，并支持甲骨文ARM平台。
+搭建 Shadowsocks-rust， V2ray+ Nginx + WebSocket 和 Reality, Hysteria2 代理脚本，支持 Debian、Ubuntu、Centos，并支持甲骨文ARM平台。
 
-简单点讲，没域名的用户可以安装 Shadowsocks-libev 和 Reality 代理，有域名的可以安装 V2ray+ Nginx + WebSocket 代理，各取所需。
+简单点讲，没域名的用户可以安装 Reality 和 hy2 代理，有域名的可以安装 V2ray+ Nginx + WebSocket 代理，各取所需。
 
 运行脚本：
 
@@ -11,13 +11,13 @@ wget https://raw.githubusercontent.com/yeahwu/v2ray-wss/main/tcp-wss.sh && bash 
 
 **便宜VPS推荐：** https://hostalk.net/deals.html
 
-![image](https://user-images.githubusercontent.com/13328328/235636662-5df2a97d-dd2c-4ca1-af0d-1b4e69119111.png)
+![image](https://github.com/yeahwu/v2ray-wss/assets/13328328/99ce2c9b-4e00-490c-8469-acb65174c912)
 
 已测试系统如下：
 
-Debian 9, 10, 11
+Debian 9, 10, 11, 12
 
-Ubuntu 16.04, 18.04, 20.04
+Ubuntu 16.04, 18.04, 20.04, 22.04
 
 CentOS 7
 
@@ -25,7 +25,7 @@ WSS客户端配置信息保存在：
 `cat /usr/local/etc/v2ray/client.json`
 
 Shadowsocks客户端配置信息：
-`cat /etc/shadowsocks-libev/config.json`
+`cat /etc/shadowsocks/config.json`
 
 Reality客户端配置信息保存在：
 `cat /usr/local/etc/xray/reclient.json`
